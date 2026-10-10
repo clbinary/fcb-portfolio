@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--favicon-->
+    <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <title>Chanace Linnsay - Computer Engineering Student</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --color-cream-bg: #FAF7F2;
+        --color-cream-card: #FFFFFF;
+        --color-cream-muted: #F3ECE2;
+        --color-burgundy: #6B1426;
+        --color-burgundy-dark: #4A0D1A;
+        --color-burgundy-light: #8E2036;
+        --color-text-main: #241418;
+        --color-text-muted: #5C4B4E;
+        --color-border: #E8DCCF;
+      }
+
+      body {
+        background-color: var(--color-cream-bg);
+        color: var(--color-text-main);
+        font-family: 'Plus Jakarta Sans', sans-serif;
+      }
+
+      .font-serif-title {
+        font-family: 'Cormorant Garamond', Georgia, serif;
+      }
+
+      .border-subtle {
+        border-color: var(--color-border);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex flex-col antialiased selection:bg-[#6B1426] selection:text-white">
+    <!-- ================= NAVBAR ================= -->
+    <header class="sticky top-0 z-50 bg-[#FAF7F2]/95 backdrop-blur-md border-b border-[#E8DCCF] transition-all duration-300">
+      <nav class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+        <!-- EDIT: NAVBAR_BRAND -->
+        <a href="#hero" class="group flex items-center gap-3">
+          <span class="w-8 h-8 rounded-full bg-[#6B1426] flex items-center justify-center text-[#FAF7F2] font-serif-title font-bold text-lg shadow-sm group-hover:scale-105 transition-transform"> ✦ </span>
+          <span class="font-serif-title text-2xl font-bold tracking-tight text-[#6B1426] group-hover:text-[#4A0D1A] transition-colors"> Computer Engineer Student </span>
+          <!-- should be name -->
+        </a>
+        <!-- Navigation Links -->
+        <ul class="flex items-center gap-8 text-sm font-medium tracking-wide text-[#5C4B4E]">
+          <li>
+            <a href="#about" class="hover:text-[#6B1426] transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-[#6B1426] after:transition-all">About</a>
+          </li>
+          <li>
+            <a href="#projects" class="hover:text-[#6B1426] transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-[#6B1426] after:transition-all">Projects</a>
+          </li>
+          <li>
+            <a href="#skills" class="hover:text-[#6B1426] transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-[#6B1426] after:transition-all">Skills</a>
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-[#6B1426] transition-colors py-1 relative after:absolute after:bottom-0 after:left-0 after:w-0 hover:after:w-full after:h-[2px] after:bg-[#6B1426] after:transition-all">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="flex-grow">
+      <!-- ================= HERO SECTION ================= -->
+      <section id="hero" class="py-20 md:py-28 px-6 border-b border-[#E8DCCF]">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+          <!-- Text introduction -->
+          <div class="md:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#F3ECE2] border border-[#E8DCCF] text-xs font-semibold tracking-wider text-[#6B1426] uppercase">
+              <span>Engineering & Design</span>
+            </div>
+            <!-- EDIT: YOUR_NAME -->
+            <h1 class="font-serif-title text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-[#241418] leading-[1.08]"> Chanace Linnsay </h1>
+            <!-- EDIT: YOUR_JOB_TITLE -->
+            <h2 class="text-xl md:text-2xl font-medium text-[#6B1426] tracking-wide"> Computer Engineering Student </h2>
+            <!-- EDIT: SHORT_INTRODUCTION -->
+            <p class="text-lg md:text-xl text-[#5C4B4E] leading-relaxed max-w-xl font-light"> Explore the portfolio of a BS Computer Engineering student with skills in programming, hardware, embedded systems, circuit design, and software development. </p>
+            <div class="pt-4 flex items-center gap-4">
+              <a href="#contact" class="inline-flex items-center justify-center px-7 py-3.5 rounded-lg bg-[#6B1426] text-[#FAF7F2] text-sm font-semibold tracking-wide hover:bg-[#4A0D1A] shadow-md hover:shadow-lg transition-all duration-200"> Contact Me </a>
+              <a href="#projects" class="inline-flex items-center justify-center px-7 py-3.5 rounded-lg border border-[#6B1426] text-[#6B1426] text-sm font-semibold tracking-wide hover:bg-[#6B1426] hover:text-[#FAF7F2] transition-all duration-200"> Project Link </a>
+            </div>
+          </div>
+
+          <!-- Hero Portrait Image -->
+          <div class="md:col-span-5 flex justify-center md:justify-end">
+            <div class="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden shadow-2xl border-4 border-[#FFFFFF] bg-[#F3ECE2] group">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#6B1426]/20 to-transparent z-10 pointer-events-none"></div>
+              <!-- EDIT: HERO_IMAGE -->
+              <img src="./profile-2.jpg" alt="Profile Portrait" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ================= ABOUT SECTION ================= -->
+      <section id="about" class="py-20 md:py-24 px-6 border-b border-[#E8DCCF] bg-[#FFFFFF]/60">
+        <div class="max-w-4xl mx-auto">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-6 h-[1.5px] bg-[#6B1426]"></div>
+            <span class="text-xs font-bold tracking-widest uppercase text-[#6B1426]">Overview</span>
+          </div>
+          <h2 class="font-serif-title text-3xl md:text-4xl font-bold text-[#241418] mb-8"> ABOUT </h2>
+          <div class="p-8 md:p-10 rounded-2xl bg-[#FFFFFF] border border-[#E8DCCF] shadow-sm relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-2 h-full bg-[#6B1426]"></div>
+            <!-- EDIT: ABOUT_YOU -->
+            <p class="text-lg md:text-xl text-[#5C4B4E] leading-relaxed font-light"> I am a Bachelor of Science in Computer Engineering student with an interest in computer hardware, software development, embedded systems, and networking technologies. I am developing my skills in programming, troubleshooting, circuit design, and system integration to understand how hardware and software work together. Through academic projects and hands-on learning, I aim to apply computer engineering principles to solve technical problems and create practical, efficient solutions. I am eager to expand my knowledge and contribute to innovative technology projects. </p>
+          </div>
+        </div>
+      </section>
+      <!-- ================= PROJECTS SECTION ================= -->
+      <section id="projects" class="py-20 md:py-28 px-6 border-b border-[#E8DCCF]">
+        <div class="max-w-6xl mx-auto">
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+            <div>
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-6 h-[1.5px] bg-[#6B1426]"></div>
+                <span class="text-xs font-bold tracking-widest uppercase text-[#6B1426]">Work Samples</span>
+              </div>
+              <h2 class="font-serif-title text-3xl md:text-5xl font-bold text-[#241418]"> Featured Projects </h2>
+            </div>
+            <p class="text-sm text-[#5C4B4E] mt-3 md:mt-0 font-medium"> Curated selection of technical implementations </p>
+          </div>
+          <!-- Exactly 3 Project Cards -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Project Card 1 -->
+            <div class="bg-[#FFFFFF] border border-[#E8DCCF] rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:border-[#6B1426]/40 transition-all duration-300 flex flex-col group">
+              <div class="w-full aspect-[16/10] overflow-hidden bg-[#F3ECE2] relative">
+                <!-- EDIT: PROJECT_IMAGE_1 -->
+                <img src="./smart-bin-2.webp" alt="Project Preview" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              </div>
+              <div class="p-6 md:p-7 flex flex-col flex-grow">
+                <!-- EDIT: PROJECT_TITLE_1 -->
+                <h3 class="font-serif-title text-2xl font-bold text-[#241418] mb-3 group-hover:text-[#6B1426] transition-colors"> SMART BIN PROTOTYPE </h3>
+                <!-- EDIT: PROJECT_DESCRIPTION_1 -->
+                <p class="text-[#5C4B4E] text-sm leading-relaxed mb-6 flex-grow font-light"> Co-authored a research project focused on automated waste management and sanitation, featuring an Arduino Nano-based system integrated with inductive, capacitive, IR, and ultrasonic sensors for touchless operation and automated waste segregation. </p>
+                <!-- EDIT: PROJECT_LINK_1 -->
+                <a href="#" class="inline-flex items-center gap-2 text-sm font-semibold text-[#6B1426] hover:text-[#4A0D1A] group/link">
+                  <span>Project Link</span>
+                  <span class="group-hover/link:translate-x-1 transition-transform">→</span>
+                </a>
+              </div>
+            </div>
+            <!-- Project Card 2 -->
+            <div class="bg-[#FFFFFF] border border-[#E8DCCF] rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:border-[#6B1426]/40 transition-all duration-300 flex flex-col group">
+              <div class="w-full aspect-[16/10] overflow-hidden bg-[#F3ECE2] relative">
+                <!-- EDIT: PROJECT_IMAGE_2 -->
+                <img src="ups-prot.jfif" alt="Project Preview" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              </div>
+              <div class="p-6 md:p-7 flex flex-col flex-grow">
+                <!-- EDIT: PROJECT_TITLE_2 -->
+                <h3 class="font-serif-title text-2xl font-bold text-[#241418] mb-3 group-hover:text-[#6B1426] transition-colors"> UPS PROTOTYPE </h3>
+                <!-- EDIT: PROJECT_DESCRIPTION_2 -->
+                <p class="text-[#5C4B4E] text-sm leading-relaxed mb-6 flex-grow font-light"> Designed and developed a UPS prototype aimed at providing backup power during electrical interruptions, helping maintain continuous operation of essential electronic devices. This project demonstrates practical skills in circuit design, power electronics, hardware integration, and electrical system prototyping relevant to Computer Engineering. </p>
+                <!-- EDIT: PROJECT_LINK_2 -->
+                <a href="#" class="inline-flex items-center gap-2 text-sm font-semibold text-[#6B1426] hover:text-[#4A0D1A] group/link">
+                  <span>Project Link</span>
+                  <span class="group-hover/link:translate-x-1 transition-transform">→</span>
+                </a>
+              </div>
+            </div>
+            <!-- Project Card 3 -->
+            <div class="bg-[#FFFFFF] border border-[#E8DCCF] rounded-2xl overflow-hidden shadow-sm hover:shadow-xl hover:border-[#6B1426]/40 transition-all duration-300 flex flex-col group">
+              <div class="w-full aspect-[16/10] overflow-hidden bg-[#F3ECE2] relative">
+                <!-- EDIT: PROJECT_IMAGE_3 -->
+                <img src="web-photo.png" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              </div>
+              <div class="p-6 md:p-7 flex flex-col flex-grow">
+                <!-- EDIT: PROJECT_TITLE_3 -->
+                <h3 class="font-serif-title text-2xl font-bold text-[#241418] mb-3 group-hover:text-[#6B1426] transition-colors"> WEBSITES </h3>
+                <!-- EDIT: PROJECT_DESCRIPTION_3 -->
+                <p class="text-[#5C4B4E] text-sm leading-relaxed mb-6 flex-grow font-light"> A web development project that presents technical skills, programming projects, and academic achievements through a clean, user-friendly interface. Using HTML, CSS, JavaScript, and basic UI/UX design principles, the website demonstrates front-end development, responsive web design, and professional digital portfolio presentation. </p>
+                <!-- EDIT: PROJECT_LINK_3 -->
+                <a href="#" class="inline-flex items-center gap-2 text-sm font-semibold text-[#6B1426] hover:text-[#4A0D1A] group/link">
+                  <span>Project Link</span>
+                  <span class="group-hover/link:translate-x-1 transition-transform">→</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ================= SKILLS & TOOLS SECTION ================= -->
+      <section id="skills" class="py-20 md:py-28 px-6 border-b border-[#E8DCCF] bg-[#FFFFFF]/60">
+        <div class="max-w-5xl mx-auto">
+          <div class="text-center max-w-xl mx-auto mb-14">
+            <div class="inline-flex items-center gap-2 mb-3">
+              <div class="w-4 h-[1.5px] bg-[#6B1426]"></div>
+              <span class="text-xs font-bold tracking-widest uppercase text-[#6B1426]">Technical Toolkit</span>
+              <div class="w-4 h-[1.5px] bg-[#6B1426]"></div>
+            </div>
+            <h2 class="font-serif-title text-3xl md:text-5xl font-bold text-[#241418]"> Expertise & Technologies </h2>
+          </div>
+          <!-- Exactly 2 Cards: Skills and Tools / Technologies -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Card 1: Skills -->
+            <div class="bg-[#FFFFFF] border border-[#E8DCCF] rounded-2xl p-8 md:p-10 shadow-sm hover:shadow-md transition-shadow">
+              <!-- EDIT: SKILLS_HEADING -->
+              <div class="flex items-center gap-3 pb-6 border-b border-[#E8DCCF]">
+                <span class="w-3 h-3 rounded-full bg-[#6B1426]"></span>
+                <h3 class="font-serif-title text-2xl font-bold text-[#241418]"> Skills </h3>
+              </div>
+              <!-- EDIT: SKILLS_LIST -->
+              <ul class="divide-y divide-[#F3ECE2] mt-4 text-[#5C4B4E]">
+                <li class="py-3.5 flex items-center justify-between font-medium">
+                  <span>Programming Language (C++, C, HTML, CSS, Java, Python)</span>
+                  <span class="text-xs text-[#6B1426]">✦</span>
+                </li>
+                <li class="py-3.5 flex items-center justify-between font-medium">
+                  <span>Hardware Skills (Arduino, Sensors, ESP32)</span>
+                  <span class="text-xs text-[#6B1426]">✦</span>
+                </li>
+                <li class="py-3.5 flex items-center justify-between font-medium">
+                  <span>Design (UI/UX - Figma, Graphic - Canva)</span>
+                  <span class="text-xs text-[#6B1426]">✦</span>
+                </li>
+                <li class="py-3.5 flex items-center justify-between font-medium">
+                  <span>IT Related (UPS repair, Workstation Creation, Domain)</span>
+                  <span class="text-xs text-[#6B1426]">✦</span>
+                </li>
+              </ul>
+            </div>
+            <!-- Card 2: Tools / Technologies -->
+            <div class="bg-[#FFFFFF] border border-[#E8DCCF] rounded-2xl p-8 md:p-10 shadow-sm hover:shadow-md transition-shadow">
+              <!-- EDIT: TOOLS_HEADING -->
+              <div class="flex items-center gap-3 pb-6 border-b border-[#E8DCCF]">
+                <span class="w-3 h-3 rounded-full bg-[#8E2036]"></span>
+                <h3 class="font-serif-title text-2xl font-bold text-[#241418]"> Tools / Technologies </h3>
+              </div>
+              <!-- EDIT: TOOLS_LIST -->
+              <ul class="divide-y divide-[#F3ECE2] mt-4 text-[#5C4B4E]">
+                <li class="py-3.5 flex items-center justify-between font-medium">
+                  <span>Visual Basic Studio</span>
+                  <span class="text-xs text-[#8E2036]">✦</span>
+                </li>
+                <li class="py-3.5 flex items-center justify-between font-medium">
+                  <span>Sublime Text</span>
+                  <span class="text-xs text-[#8E2036]">✦</span>
+                </li>
+                <li class="py-3.5 flex items-center justify-between font-medium">
+                  <span>Figma</span>
+                  <span class="text-xs text-[#8E2036]">✦</span>
+                </li>
+                <li class="py-3.5 flex items-center justify-between font-medium">
+                  <span>Claude AI</span>
+                  <span class="text-xs text-[#8E2036]">✦</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ================= CONTACT SECTION ================= -->
+      <section id="contact" class="py-20 md:py-28 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <div class="inline-flex items-center gap-2 mb-3">
+            <div class="w-4 h-[1.5px] bg-[#6B1426]"></div>
+            <span class="text-xs font-bold tracking-widest uppercase text-[#6B1426]">Get In Touch</span>
+            <div class="w-4 h-[1.5px] bg-[#6B1426]"></div>
+          </div>
+          <h2 class="font-serif-title text-3xl md:text-5xl font-bold text-[#241418] mb-6"> Contact Information </h2>
+          <div class="bg-[#FFFFFF] border border-[#E8DCCF] rounded-3xl p-8 md:p-12 shadow-md max-w-2xl mx-auto space-y-8">
+            <!-- EDIT: YOUR_EMAIL -->
+            <div>
+              <p class="text-xs font-bold uppercase tracking-wider text-[#6B1426] mb-2">Direct Inquiries</p>
+              <a href="mailto:chanacelinnsay@gmail.com" class="font-serif-title text-2xl md:text-3xl text-[#241418] hover:text-[#6B1426] font-semibold transition-colors underline decoration-[#E8DCCF] hover:decoration-[#6B1426] underline-offset-8"> chanacelinnsay@gmail.com </a>
+            </div>
+            <div class="w-16 h-[1px] bg-[#E8DCCF] mx-auto"></div>
+            <!-- EDIT: YOUR_SOCIAL_LINK -->
+            <div>
+              <p class="text-xs font-bold uppercase tracking-wider text-[#5C4B4E] mb-3">Professional Profiles</p>
+              <a href="#" class="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl bg-[#6B1426] text-[#FAF7F2] text-sm font-semibold tracking-wide hover:bg-[#4A0D1A] shadow-sm hover:shadow transition-all duration-200"> Hit Me Up! </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ================= FOOTER ================= -->
+    <footer class="border-t border-[#E8DCCF] bg-[#FAF7F2] py-10 px-6 text-center text-sm text-[#5C4B4E]">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+        <p>© Chanace Linnsay. All rights reserved.</p>
+        <p class="text-xs text-[#5C4B4E]/80">Crafted with Sublime Text</p>
+      </div>
+    </footer>
+  </body>
+</html>
